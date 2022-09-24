@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EB071927"
+    android:layout_height="match_parent"
+    tools:context=".Ui.QuickMathFragment">
+
+
+    <TextView
+        android:id="@+id/quiz_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0 / 10 " />
+
+    <TextView
+        android:id="@+id/quiz_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/quiz_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/quiz_count"
+        tools:text="Score: 20" />
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        tools:text="12 + 52 = ?"
+        android:textSize="28sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quiz_count" />
+
+    <Button
+        android:id="@+id/btn_choice1"
+        android:layout_width="130dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_choice2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btn_choice2" />
+
+    <Button
+        android:id="@+id/btn_choice3"
+        android:layout_width="130dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choice1" />
+
+    <Button
+        android:id="@+id/btn_choice2"
+        android:layout_width="130dp"
+        android:layout_height="63dp"
+        android:layout_marginEnd="60dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="253dp" />
+
+    <Button
+        android:id="@+id/btn_choice4"
+        android:layout_width="130dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="60dp"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_choice3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_choice2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
