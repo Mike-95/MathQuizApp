@@ -4,5 +4,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="quiz_count">%d / %d</string>
     <string name="quiz_score">Score: %d</string>
+    <string name="skip">Skip</string>
+    <string name="submit">Submit</string>
 
 </resources>
