@@ -8,7 +8,7 @@
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/quick_math_fragment"
-        android:name="Mikepopup.com.Ui.QuickMathFragment"
+        android:name="Mikepopup.com.Ui.WordQuizFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"

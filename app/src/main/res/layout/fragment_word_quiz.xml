@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#EB071927"
-    tools:context=".Ui.QuickMathFragment">
+    tools:context=".Ui.WordQuizFragment">
 
 
     <TextView
