@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#EB071927"
     android:layout_height="match_parent"
+    android:background="#EB071927"
     tools:context=".Ui.QuickMathFragment">
 
 
@@ -22,77 +22,49 @@
 
     <TextView
         android:id="@+id/quiz_score"
-        android:text="@string/quiz_score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
         android:layout_marginEnd="8dp"
+        android:text="@string/quiz_score"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="@+id/quiz_count"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/quiz_count"
         tools:text="Score: 20" />
 
     <TextView
-        android:id="@+id/tv_question"
+        android:id="@+id/tv_word"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="155dp"
-        android:text="2 + 52 = ?"
+        android:text="@string/word"
         android:textColor="@color/white"
         android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="12 + 52 = ?" />
+        tools:text="Word" />
 
-    <Button
-        android:id="@+id/btn_choice1"
-        android:layout_width="130dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginEnd="24dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_choice2"
-        app:layout_constraintEnd_toStartOf="@+id/btn_choice2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btn_choice2" />
 
-    <Button
-        android:id="@+id/btn_choice3"
-        android:layout_width="130dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="60dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="24dp"
-        android:text="Button"
-        app:layout_constraintEnd_toStartOf="@+id/btn_choice4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_choice1" />
-
-    <Button
-        android:id="@+id/btn_choice2"
-        android:layout_width="130dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="62dp"
-        android:layout_marginEnd="60dp"
-        android:text="Button"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="16dp"
+        android:hint="@string/enter_your_word"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_choice1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_question" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_word">
 
-    <Button
-        android:id="@+id/btn_choice4"
-        android:layout_width="130dp"
-        android:layout_height="63dp"
-        android:layout_marginStart="31dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="60dp"
-        android:text="Button"
-        app:layout_constraintBottom_toBottomOf="@+id/btn_choice3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btn_choice3"
-        app:layout_constraintTop_toBottomOf="@+id/btn_choice2" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:maxLines="1" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btn_skip"
@@ -109,12 +81,12 @@
         android:id="@+id/btn_submit"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="84dp"
+        android:layout_marginTop="124dp"
         android:layout_marginEnd="16dp"
         android:text="@string/submit"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btn_skip"
-        app:layout_constraintTop_toBottomOf="@+id/btn_choice4" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

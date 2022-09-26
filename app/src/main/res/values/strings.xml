@@ -6,5 +6,7 @@
     <string name="quiz_score">Score: %d</string>
     <string name="skip">Skip</string>
     <string name="submit">Submit</string>
+    <string name="word">Word</string>
+    <string name="enter_your_word">Enter your word</string>
 
 </resources>
