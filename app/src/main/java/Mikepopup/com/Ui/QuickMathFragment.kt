@@ -35,7 +35,7 @@ class QuickMathFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_quick_math, container, false)
+        return inflater.inflate(R.layout.fragment_word_quiz, container, false)
     }
 
     companion object {
